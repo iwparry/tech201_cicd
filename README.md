@@ -8,7 +8,7 @@ CI/CD is considered the backbone of DevOps practices and automation, it plays a 
 
 CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD serves as the solution to the problems integrating new code can cause for develoment and operations teams  (AKA "integration hell"). Speifically, CI/CD introduces ongoing automation and continuous monitoring throughout the lifecyle of apps, from integration testing phases to delivery and deployment. Taken together, these connected practices are often referred to as the **CICD pipeline**.
 
-![](cicd.png)
+![](images/cicd.png)
 
 Lets look specifically at what each of these are:
 
@@ -22,7 +22,7 @@ Lets look specifically at what each of these are:
 **Continuous deployment**, which may sometimes also be referred to as the "CD" in CI/CD, can refer to automatically releasing a developers changes from the repository to production. Basically with continuous deployment, the entire CI/CD pipeline is automated with no human intervention, from integration to deploying the changes to the production environment, the only thing that will prevent a change to be deployed in this case is a failed test. This is the key difference between continuous delivery and continuous deployment.
 
 ## Jenkins
-![](Jenkins-Logo.png)
+![](images/Jenkins-Logo.png)
 **Jenkins** is an open source automation server. It helps automate the parts of software development related to building, testing and deploying, facilitating continuous integration and continuous delivery. This makes it easy for developers to continuously work  on the betterment of the productby inmtegrating changes to the project. Jenkins automates the software builds in a continuous manner and lets the developers know about the errors at an early stage.
 
 Some of the possible staps that can be performed using Jenkins are:
