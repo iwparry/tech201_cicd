@@ -4,7 +4,7 @@
 1. This is my first webhook test! - Success
 2. Testing that my `app` works in the `dev` branch - Success
 3. Testing the automated merging of our `dev` and `main` branches if our jobs are successful. - Success
-4. Testing if the merge is successful, our main branch is sent to an EC2 Instance - Nginx is running but repo is not on EC2 - Testing again
+4. Testing if the merge is successful, our main branch is sent to an EC2 Instance - Nginx is running but repo is not on EC2 - Testing job 3 again, need to have app folder migrated to ec2 instance
 
 ### Webhook Testing 
 We add a webhook to our Github repo settings so that any git push we make to that repo will trigger our job in Jenkins.
