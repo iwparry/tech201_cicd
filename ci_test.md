@@ -2,7 +2,8 @@
 
 ## Tests
 1. This is my first webhook test! - Success
-2. Testing that my `app` works in the `dev` branch
+2. Testing that my `app` works in the `dev` branch - Success
+3. Testing the automated merging of our `dev` and `main` branches if our jobs are successful.
 
 ### Webhook Testing 
 We add a webhook to our Github repo settings so that any git push we make to that repo will trigger our job in Jenkins.
@@ -28,4 +29,15 @@ branch 'dev' set up to track 'origin/dev'.
 We test our app in the dev branch via the following configuration to our build.
 ![](images/jenkins-dev.png)
 We need to ensure that this is being done on our `dev` branch, not `main`.
+
+We push these changes to our `dev` branch in the same way as we would do main but with this command:
+```
+git push -u origin dev
+```
+As we can see here Github lets us know that something has been pushed to our `dev` branch!
+![](images/dev-push.png)
+If we switch to our dev branch on Github we can see our commits as shown below.
+![](images/github-dev.png)
+
+### Automating merging dev and main branches
 
