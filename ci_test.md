@@ -3,7 +3,7 @@
 ## Tests
 1. This is my first webhook test! - Success
 2. Testing that my `app` works in the `dev` branch - Success
-3. Testing the automated merging of our `dev` and `main` branches if our jobs are successful.
+3. Testing the automated merging of our `dev` and `main` branches if our jobs are successful. - Success
 
 ### Webhook Testing 
 We add a webhook to our Github repo settings so that any git push we make to that repo will trigger our job in Jenkins.
@@ -40,4 +40,12 @@ If we switch to our dev branch on Github we can see our commits as shown below.
 ![](images/github-dev.png)
 
 ### Automating merging dev and main branches
+Now that we have verified that our app works on our `dev` branch, we now want to automate the process of merging our `dev` branch with our `main` branch.
+To do this we create a new item in Jenkins and configure it similarly to our first Jenkins job.
 
+ensure that the job is connected to our desired repo with the correct credentials (SSH key)
+
+In this particular job what we want is to go to 'post-build actions' and select 'build other projects'. Here we set our project to be built only if our first job has run successfully.
+
+
+After this we select 'git publisher' letting Jenkins know that we want to merge our branch (`dev`) with our main branch on Github.
