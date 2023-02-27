@@ -4,6 +4,7 @@
 1. This is my first webhook test! - Success
 2. Testing that my `app` works in the `dev` branch - Success
 3. Testing the automated merging of our `dev` and `main` branches if our jobs are successful. - Success
+4. Testing if the merge is successful, our main branch is sent to an EC2 Instance
 
 ### Webhook Testing 
 We add a webhook to our Github repo settings so that any git push we make to that repo will trigger our job in Jenkins.
@@ -46,6 +47,8 @@ To do this we create a new item in Jenkins and configure it similarly to our fir
 ensure that the job is connected to our desired repo with the correct credentials (SSH key)
 
 In this particular job what we want is to go to 'post-build actions' and select 'build other projects'. Here we set our project to be built only if our first job has run successfully.
-
+![](images/build-other-proj.png)
 
 After this we select 'git publisher' letting Jenkins know that we want to merge our branch (`dev`) with our main branch on Github.
+![](images/git-publisher.png)
+
